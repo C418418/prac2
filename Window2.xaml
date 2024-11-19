@@ -1,0 +1,18 @@
+﻿<Window x:Class="evdokimovpractice2.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:evdokimovpractice2"
+        mc:Ignorable="d"
+        Title="Калькулятор" Height="450" Width="800">
+    <Grid>
+        <Label Content="Калькулятор" HorizontalAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Button x:Name="Answer" Content="=>" HorizontalAlignment="Left" Margin="374,0,0,0" VerticalAlignment="Center" FontSize="16" Click="Answer_Click"/>
+        <TextBox x:Name="NumberA" HorizontalAlignment="Left" Margin="55,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120" TextChanged="TextBox_TextChanged" Height="120"/>
+        <TextBox x:Name="NumberB" HorizontalAlignment="Left" Margin="235,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120" TextChanged="TextBox_TextChanged" Height="120"/>
+        <Label x:Name="ResultL" Content="" HorizontalAlignment="Left" Margin="405,186,0,0" VerticalAlignment="Top" Height="71" Width="108"/>
+        <TextBox x:Name="Operator" HorizontalAlignment="Left" Margin="175,186,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="50" TextChanged="TextBox_TextChanged" Height="55"/>
+        <Button Content="Выход" HorizontalAlignment="Left" Margin="715,15,0,0" VerticalAlignment="Top" Height="60" Width="60" Click="Button_Click"/>
+    </Grid>
+</Window>
